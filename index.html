@@ -7803,19 +7803,19 @@
                 if (carga_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Carga: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: contrato sem carga horária detalhada:</div><div class="mb-2" style="color: black; font-weight: normal;">O contrato deve conter a carga horária detalhada (quantidade de horas por dia ou horas por semana) para verificação do salário mínimo profissional.</div>');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: contrato sem carga horária detalhada:</div><div class="mb-2" style="color: black; font-weight: normal;">O contrato deve conter a carga horária detalhada (quantidade de horas por dia ou horas por semana) para verificação do salário mínimo profissional.</div>');
                 }
 
                 if (honorarios_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Honorários: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: contrato sem o valor dos honorários mensais:</div><div class="mb-2" style="color: black; font-weight: normal;">O contrato deve conter os honorários mensais para verificação do salário mínimo profissional.</div>');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: contrato sem o valor dos honorários mensais:</div><div class="mb-2" style="color: black; font-weight: normal;">O contrato deve conter os honorários mensais para verificação do salário mínimo profissional.</div>');
                 }
 
                 if (piso_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Piso: OK'); 
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: valor do contrato não atende ao piso profissional:</div><div class="mb-2" style="color: black; font-weight: normal;">Os honorários mensais devem atender ao valor mínimo estabelecido na <a href="https://transparencia.caubr.gov.br/resolucao38/" target="blank">Resolução nº 38 do CAU/BR</a></div>');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: valor do contrato não atende ao piso profissional:</div><div class="mb-2" style="color: black; font-weight: normal;">Os honorários mensais devem atender ao valor mínimo estabelecido na <a href="https://transparencia.caubr.gov.br/resolucao38/" target="blank">Resolução nº 38 do CAU/BR</a></div>');
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -7826,7 +7826,7 @@
                 if (document.getElementById('vigencia_sim').checked) {
                     avancaComHistorico('etapa23', 'etapa24', '[VINCULO-CORRETO] ✅ Vigencia: OK');
                 } else if (document.getElementById('vigencia_nao').checked) {
-                    avancaComHistorico('etapa23', 'etapa24', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: contrato sem vigência determinada:</div><div class="mb-2" style="color: black; font-weight: normal;">O contrato deve estabelecer uma data de término definida, sendo vedada a sua vigência por período superior a quatro anos, conforme dispõe o art. 598 do Código Civil.</div>');
+                    avancaComHistorico('etapa23', 'etapa24', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: contrato sem vigência determinada:</div><div class="mb-2" style="color: black; font-weight: normal;">O contrato deve estabelecer uma data de término definida, sendo vedada a sua vigência por período superior a quatro anos, conforme dispõe o art. 598 do Código Civil.</div>');
                 } else {
                     Swal.fire({
                     icon: "warning",
@@ -7845,7 +7845,7 @@
                 if (document.getElementById('cert_correta_sim').checked) {
                     avancaComHistorico('etapa24', 'etapa35', '[VINCULO-CORRETO] ✅ Certificação: OK');
                 } else if (document.getElementById('cert_correta_nao').checked) {
-                    avancaComHistorico('etapa24', 'etapa35', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: documento sem certificação digital:</div><div style="color: black; font-weight: normal;">O Contrato de Prestação de Serviços, em um arquivo PDF, deve ser salvo com <strong>CERTIFICAÇÃO DIGITAL</strong> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div style="color: black; font-weight: normal;">🔗 Para realizar a certificação digital gratuitamente pelo Gov.br <a href="https://assinador.iti.br/assinatura/index.xhtml">clique aqui</a>.</div><div style="color: black; font-weight: normal;">🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">clique aqui</a>.</div>');
+                    avancaComHistorico('etapa24', 'etapa35', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: documento sem certificação digital:</div><div style="color: black; font-weight: normal;">O Contrato de Prestação de Serviços, em um arquivo PDF, deve ser salvo com <strong>CERTIFICAÇÃO DIGITAL</strong> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div style="color: black; font-weight: normal;">🔗 Para realizar a certificação digital gratuitamente pelo Gov.br <a href="https://assinador.iti.br/assinatura/index.xhtml">clique aqui</a>.</div><div style="color: black; font-weight: normal;">🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">clique aqui</a>.</div>');
                 } else {
                     Swal.fire({
                     icon: "warning",
@@ -7889,8 +7889,8 @@
                     if (!cboSim.checked && !cboNao.checked) erros.push("• Dados de <b>ocupação</b>.");
 
                     if (erros.length === 0) {
-                        proximosPassos.push(identSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Física Identificação: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS incompleta:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter informações que comprovem o vínculo do profissional com a empresa, incluindo dados pessoais, registro (para comprovação do cargo e CNPJ vinculado), salário (para comprovação do atendimento ao piso salarial), dissídios e demais anotações pertinentes.</div>');
-                        proximosPassos.push(cboSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Física CBO: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: ocupação incompatível:</div><div class="mb-2" style="color: black; font-weight: normal;">O cargo registrado na CTPS deve compreender uma ocupação compatível com o exercício das atividades de Arquitetura e Urbanismo.</div>');
+                        proximosPassos.push(identSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Física Identificação: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: CTPS incompleta:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter informações que comprovem o vínculo do profissional com a empresa, incluindo dados pessoais, registro (para comprovação do cargo e CNPJ vinculado), salário (para comprovação do atendimento ao piso salarial), dissídios e demais anotações pertinentes.</div>');
+                        proximosPassos.push(cboSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Física CBO: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: ocupação incompatível:</div><div class="mb-2" style="color: black; font-weight: normal;">O cargo registrado na CTPS deve compreender uma ocupação compatível com o exercício das atividades de Arquitetura e Urbanismo.</div>');
                         destino = 'etapa26'; // Fluxo Física
                     }
                 } 
@@ -7904,8 +7904,8 @@
                     if (!cboSim.checked && !cboNao.checked) erros.push("• Dados de <b>ocupação</b>.");
 
                     if (erros.length === 0) {
-                        proximosPassos.push(cadSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Digital Cadastrais: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS incompleta:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter informações que comprovem o vínculo do profissional com a empresa, incluindo dados pessoais, registro (para comprovação do cargo e CNPJ vinculado), salário (para comprovação do atendimento ao piso salarial), dissídios e demais anotações pertinentes.</div>');
-                        proximosPassos.push(cboSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Digital CBO: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: ocupação incompatível:</div><div class="mb-2" style="color: black; font-weight: normal;">O cargo registrado na CTPS deve compreender uma ocupação compatível com o exercício das atividades de Arquitetura e Urbanismo.</div>');
+                        proximosPassos.push(cadSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Digital Cadastrais: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: CTPS incompleta:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter informações que comprovem o vínculo do profissional com a empresa, incluindo dados pessoais, registro (para comprovação do cargo e CNPJ vinculado), salário (para comprovação do atendimento ao piso salarial), dissídios e demais anotações pertinentes.</div>');
+                        proximosPassos.push(cboSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Digital CBO: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: ocupação incompatível:</div><div class="mb-2" style="color: black; font-weight: normal;">O cargo registrado na CTPS deve compreender uma ocupação compatível com o exercício das atividades de Arquitetura e Urbanismo.</div>');
                         destino = 'etapa28'; // Fluxo Digital
                     }
                 }
@@ -7965,19 +7965,19 @@
                 if (honorarios26_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Carga: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS sem carga horária:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter a carga horária detalhada para verificação do salário mínimo profissional.</div><div class="mb-2" style="color: black; font-weight: normal;">Caso o documento não apresente está informação, deverá ser apresentada Ficha de Registro de Empregado ou documento equivalente que comprove a carga horária.</div>');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: CTPS sem carga horária:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter a carga horária detalhada para verificação do salário mínimo profissional.</div><div class="mb-2" style="color: black; font-weight: normal;">Caso o documento não apresente está informação, deverá ser apresentada Ficha de Registro de Empregado ou documento equivalente que comprove a carga horária.</div>');
                 }
 
                 if (honorarios26_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Honorários: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS sem valor dos honorários mensais:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter os honorários mensais para verificação do salário mínimo profissional.</div>');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: CTPS sem valor dos honorários mensais:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter os honorários mensais para verificação do salário mínimo profissional.</div>');
                 }
 
                 if (piso26_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Piso: OK'); 
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: valor dos honorários mensais não atende ao piso profissional:</div><div class="mb-2" style="color: black; font-weight: normal;">Os honorários mensais devem atender ao valor mínimo estabelecido na Resolução nº 38 do CAU/BR.</div>'); 
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: valor dos honorários mensais não atende ao piso profissional:</div><div class="mb-2" style="color: black; font-weight: normal;">Os honorários mensais devem atender ao valor mínimo estabelecido na Resolução nº 38 do CAU/BR.</div>'); 
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8041,19 +8041,19 @@
                 if (carga28_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Carga: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS sem carga horária:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter a carga horária detalhada para verificação do salário mínimo profissional.</div><div class="mb-2" style="color: black; font-weight: normal;">Caso o documento não apresente está informação, deverá ser apresentada Ficha de Registro de Empregado ou documento equivalente que comprove a carga horária.</div>');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: CTPS sem carga horária:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter a carga horária detalhada para verificação do salário mínimo profissional.</div><div class="mb-2" style="color: black; font-weight: normal;">Caso o documento não apresente está informação, deverá ser apresentada Ficha de Registro de Empregado ou documento equivalente que comprove a carga horária.</div>');
                 }
 
                 if (honorarios28_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Honorários: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS sem valor dos honorários mensais:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter os honorários mensais para verificação do salário mínimo profissional.</div>');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: CTPS sem valor dos honorários mensais:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter os honorários mensais para verificação do salário mínimo profissional.</div>');
                 }
 
                 if (piso28_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Piso: OK'); 
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: valor dos honorários mensais não atende ao piso profissional:</div><div class="mb-2" style="color: black; font-weight: normal;">Os honorários mensais devem atender ao valor mínimo estabelecido na Resolução nº 38 do CAU/BR.</div>'); 
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: valor dos honorários mensais não atende ao piso profissional:</div><div class="mb-2" style="color: black; font-weight: normal;">Os honorários mensais devem atender ao valor mínimo estabelecido na Resolução nº 38 do CAU/BR.</div>'); 
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8125,7 +8125,7 @@
                 if (document.getElementById('opcao_comprovante_vinculo_confere_ato_sim').checked) {
                     avancaComHistorico('etapa31', 'etapa44', '[VINCULO-CORRETO] ✅ Portaria de nomeação: OK');
                 } else if (document.getElementById('opcao_comprovante_vinculo_confere_ato_nao').checked) {
-                    avancaComHistorico('etapa31', 'etapa44', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: comprovante de vínculo sem dados do profissional (nome, cargo contratado e data de admissão):</div><div class="mb-2" style="color: black; font-weight: normal;">Os dados do responsável técnico devem ser informados, a fim de garantir sua identificação clara e inequívoca.</div>');
+                    avancaComHistorico('etapa31', 'etapa44', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendência: comprovante de vínculo sem dados do profissional (nome, cargo contratado e data de admissão):</div><div class="mb-2" style="color: black; font-weight: normal;">Os dados do responsável técnico devem ser informados, a fim de garantir sua identificação clara e inequívoca.</div>');
                 } else {
                     Swal.fire({
                     icon: "warning",
