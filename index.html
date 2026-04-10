@@ -95,7 +95,7 @@
             /* ccs para transições */
 
             .hidden {
-                display: none; /* esconder todos card */
+                display: none/* esconder todos card */
             }
 
             .info-box {
@@ -266,6 +266,10 @@
 
             <!-- ETAPA 0 -->
             <div class="card tela" id="etapa0">
+
+                <div class="row mt-3 my-2">
+                    <h6 style="color: red;">Página de teste.</h6>
+                </div>  
 
                 <div class="row mt-3 my-2">
                     <h3>Quem deve se registrar?</h3>
@@ -4428,7 +4432,7 @@
                     </div>
 
                     <div>
-                        <h6>Os campos <strong>"Quantidade"</strong> e <strong>"Unidade"</strong> foram preenchidos com a <strong>CARGA HORÁRIA</strong> de trabalho exercida (Exemplos: 06 h/d (horas por dia) ou 30 h/sem (horas por semana))?
+                        <h6>Os campos <strong>"Quantidade"</strong> e <strong>"Unidade"</strong> foram preenchidos com a <strong>CARGA HORÁRIA</strong> de trabalho aproximada exercida (Exemplos: 06 h/d (horas por dia) ou 30 h/sem (horas por semana))?
                             <span class="btn-ajuda" id="ajuda-02-etapa-34" style="cursor: pointer;">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2854C5"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>                  
                             </span>
@@ -4452,7 +4456,7 @@
                                 </div>  
 
                                 <div class="mb-2">
-                                    A <strong>Quantidade</strong> e <strong>Unidade de Medida</strong> do RRT devem ser preenchidas com a carga horária de trabalho exercida. Exemplos:
+                                    A <strong>Quantidade</strong> e <strong>Unidade de Medida</strong> do RRT devem ser preenchidas com a carga horária de trabalho aproximada exercida. Exemplos:
                                 </div>  
 
                                 <div class="mb-2">
@@ -4474,6 +4478,23 @@
                         <br>
 
                     </div>
+
+
+
+
+
+
+                               
+
+
+
+
+
+
+
+
+
+
 
                     <div>
                         <h6>O campo <strong>"Tipologia"</strong> foi preenchido com "NÃO SE APLICA"?
@@ -6139,6 +6160,10 @@
                             </div>
                         </div>
 
+        
+
+       
+
                         <br>
 
                         <h6>O campo <strong>"Data de previsão de término"</strong> está "em branco"?
@@ -6434,7 +6459,7 @@
                                     </div>  
 
                                     <div class="mb-2">
-                                        A <strong>Quantidade</strong> e <strong>Unidade de Medida</strong> do RRT devem ser preenchidas com a carga horária aproximada de trabalho exercida. Exemplos:
+                                        A <strong>Quantidade</strong> e <strong>Unidade de Medida</strong> do RRT devem ser preenchidas com a carga horária de trabalho exercida. Exemplos:
                                     </div>  
 
                                     <div class="mb-2">
@@ -7264,13 +7289,13 @@
                 if (atualizado_sim.checked) {
                     adicionarEscolha('[CONTRATO-CORRETO] ✅ Atualizado: OK');
                 } else {
-                    adicionarEscolha('[CONTRATO-PENDENCIA] ⚠️ Atualizado: Pendente');
+                    adicionarEscolha('[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento desatualizado:</div><div style="color: black; font-weight: normal;">O Contrato Social deve estar atualizado e corresponder à última versão registrada na JUCESP.</div>');
                 }
 
                 if (registrado_sim.checked) {
                     adicionarEscolha('[CONTRATO-CORRETO] ✅ Registrado: OK');
                 } else {
-                    adicionarEscolha('[CONTRATO-PENDENCIA] ⚠️ Registrado: Pendente');
+                    adicionarEscolha('[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento sem sinais de registro:</div><div style="color: black; font-weight: normal;">O documento deve conter as informações que identifiquem que ele está registrado (data do registro, selos, entre outros).</div>');
                 }
 
 
@@ -7333,13 +7358,13 @@
                 if (atualizado10_sim.checked) {
                     adicionarEscolha('[CONTRATO-CORRETO] ✅ Atualizado: OK');
                 } else {
-                    adicionarEscolha('[CONTRATO-PENDENCIA] ⚠️ Atualizado: Pendente');
+                    adicionarEscolha('[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento desatualizado:</div><div style="color: black; font-weight: normal;">O Contrato Social deve estar atualizado e corresponder à última versão registrada em cartório.</div>');
                 }
 
                 if (registrado10_sim.checked) {
                     adicionarEscolha('[CONTRATO-CORRETO] ✅ Registrado: OK');
                 } else {
-                    adicionarEscolha('[CONTRATO-PENDENCIA] ⚠️ Registrado: Pendente');
+                    adicionarEscolha('[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento sem sinais de registro:</div><div style="color: black; font-weight: normal;">O documento deve conter as informações que identifiquem que ele está registrado (data do registro, selos, entre outros).</div>');
                 }
 
 
@@ -7358,7 +7383,7 @@
                     avancaComHistorico('etapa11', 'etapa19', '[CONTRATO-CORRETO] ✅ Documento com certificação digital');
                     return;
                 } else if (certNao.checked) {
-                    avancaComHistorico('etapa11', 'etapa19', '[CONTRATO-PENDENCIA] ⚠️ Documento sem certificação digital');
+                    avancaComHistorico('etapa11', 'etapa19', '[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento sem certificação digital:</div><div style="color: black; font-weight: normal;">O contrato social, em um arquivo PDF, deve ser salvo com <strong>CERTIFICAÇÃO DIGITAL</strong> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div style="color: black; font-weight: normal;">🔗 Para realizar a certificação digital gratuitamente pelo Gov.br <a href="https://assinador.iti.br/assinatura/index.xhtml">clique aqui</a>.</div><div style="color: black; font-weight: normal;">🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">clique aqui</a>.</div>');
                     return;
                 } else if (certRegistro.checked) {
                     avancaComHistorico('etapa11', 'etapa19', '[CONTRATO-CORRETO] ✅ Usando Certidão de Registro (emitida há menos de 12 meses)');
@@ -7405,19 +7430,19 @@
                 if (atualizado12_sim.checked) {
                     adicionarEscolha('[CONTRATO-CORRETO] ✅ Atualizado: OK');
                 } else {
-                    adicionarEscolha('[CONTRATO-PENDENCIA] ⚠️ Atualizado: Pendente');
+                    adicionarEscolha('[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento desatualizado:</div><div style="color: black; font-weight: normal;">O Requerimento de Empresário deve estar atualizado e corresponder à última versão registrada na JUCESP.</div>');
                 }
 
                 if (capital_sim.checked) {
                     adicionarEscolha('[CONTRATO-CORRETO] ✅ Capital: OK');
                 } else {
-                    adicionarEscolha('[CONTRATO-PENDENCIA] ⚠️ Capital: Pendente');
+                    adicionarEscolha('[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento com informações ausentes:</div><div class="mb-2" style="color: black; font-weight: normal;">O Requerimento de Empresário deve conter o valor do capital social, o objeto social e o endereço da empresa devidamente informados para cadastro no sistema do CAU (SICCAU).</div><div style="color: black; font-weight: normal;">Caso o documento não apresente todas essas informações, é necessário enviar, junto à solicitação, o Requerimento de Empresário inicial (ato constitutivo) e todas as suas alterações (aditivos).</div>');
                 }
 
                 if (registrado12_sim.checked) {
                     adicionarEscolha('[CONTRATO-CORRETO] ✅ Registrado: OK');
                 } else {
-                    adicionarEscolha('[CONTRATO-PENDENCIA] ⚠️ Registrado: Pendente');
+                    adicionarEscolha('[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento sem sinais de registro:</div><div style="color: black; font-weight: normal;">O documento deve conter as informações que identifiquem que ele está registrado (data do registro, selos, entre outros).</div>');
                 }
 
 
@@ -7435,7 +7460,7 @@
                     avancaComHistorico('etapa13', 'etapa19', '[CONTRATO-CORRETO] ✅ Com certificação digital');
                     return;
                 } else if (certNao.checked) {
-                    avancaComHistorico('etapa13', 'etapa19', '[CONTRATO-PENDENCIA] ⚠️ Sem certificação digital');
+                    avancaComHistorico('etapa13', 'etapa19', '[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento sem certificação digital:</div><div style="color: black; font-weight: normal;">O contrato social, em um arquivo PDF, deve ser salvo com <strong>CERTIFICAÇÃO DIGITAL</strong> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div style="color: black; font-weight: normal;">🔗 Para realizar a certificação digital gratuitamente pelo Gov.br <a href="https://assinador.iti.br/assinatura/index.xhtml">clique aqui</a>.</div><div style="color: black; font-weight: normal;">🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">clique aqui</a>.</div>');
                     return;
                 } else if (certInteiroTeor.checked) {
                     avancaComHistorico('etapa13', 'etapa19', '[CONTRATO-CORRETO] ✅ Certidão de Inteiro Teor (menos de 12 meses)');
@@ -7480,13 +7505,13 @@
                 if (atualizado14_sim.checked) {
                     adicionarEscolha('[CONTRATO-CORRETO] ✅ Estatuto Atualizado: OK');
                 } else {
-                    adicionarEscolha('[CONTRATO-PENDENCIA] ⚠️ Estatuto Atualizado: Pendente');
+                    adicionarEscolha('[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento desatualizado:</div><div style="color: black; font-weight: normal;">O Estatuto Social deve estar atualizado e corresponder à última versão registrada na JUCESP.</div>');
                 }
 
                 if (registrado14_sim.checked) {
                     adicionarEscolha('[CONTRATO-CORRETO] ✅ Estatuto Registrado: OK');
                 } else {
-                    adicionarEscolha('[CONTRATO-PENDENCIA] ⚠️ Estatuto Registrado: Pendente');
+                    adicionarEscolha('[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento sem sinais de registro:</div><div style="color: black; font-weight: normal;">O documento deve conter as informações que identifiquem que ele está registrado (data do registro, selos, entre outros).</div>');
                 }
 
 
@@ -7505,7 +7530,7 @@
                     avancaComHistorico('etapa15', 'etapa19', '[CONTRATO-CORRETO] ✅ Com certificação digital');
                     return;
                 } else if (certNao.checked) {
-                    avancaComHistorico('etapa15', 'etapa19', '[CONTRATO-PENDENCIA] ⚠️ Sem certificação digital');
+                    avancaComHistorico('etapa15', 'etapa19', '[CONTRATO-PENDENCIA] <div class="mb-2">⚠️ Documento sem certificação digital:</div><div style="color: black; font-weight: normal;">O Estatuto Social, em um arquivo PDF, deve ser salvo com <strong>CERTIFICAÇÃO DIGITAL</strong> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div style="color: black; font-weight: normal;">🔗 Para realizar a certificação digital gratuitamente pelo Gov.br <a href="https://assinador.iti.br/assinatura/index.xhtml">clique aqui</a>.</div><div style="color: black; font-weight: normal;">🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">clique aqui</a>.</div>');
                     return;
                 } else if (certInteiroTeor.checked) {
                     avancaComHistorico('etapa15', 'etapa19', '[CONTRATO-CORRETO] ✅ Certidão de Inteiro Teor (JUCESP) OU Certidão de Registro para fins de publicidade e eficácia contra terceiros (CARTÓRIO)');
@@ -7640,13 +7665,13 @@
                 if (cnpj_atualizado_sim.checked) {
                     adicionarEscolha('[CNPJ-CORRETO] ✅ CNPJ Atualizado: OK');
                 } else {
-                    adicionarEscolha('[CNPJ-PENDENCIA] ⚠️ CNPJ Atualizado: Pendente');
+                    adicionarEscolha('[CNPJ-PENDENCIA] <div class="mb-2">⚠️ Dados do CNPJ divergentes do Contrato Social:</div><div class="mb-2" style="color: black; font-weight: normal;">É necessário que o cartão CNPJ seja atualizado, com data de emissão mais recente.</div><div class="mb-2" style="color: black; font-weight: normal;">🔗 Em caso de dúvida <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_solicitacao.asp" target="_blank">clique aqui</a> para emitir o CNPJ atualizado no site Receita Federal do Brasil.</div>');
                 }
 
                 if (cnpj_ativo_sim.checked) {
                     adicionarEscolha('[CNPJ-CORRETO] ✅ CNPJ Registrado: OK');
                 } else {
-                    adicionarEscolha('[CNPJ-PENDENCIA] ⚠️ CNPJ Registrado: Pendente');
+                    adicionarEscolha('[CNPJ-PENDENCIA] <div class="mb-2">⚠️ Situação do CNPJ não está "ATIVO":</div><div class="mb-2" style="color: black; font-weight: normal;">É necessário que a situação cadastral do CNPJ esteja como "ATIVO".</div><div class="mb-2" style="color: black; font-weight: normal;">Caso esteja divergente, é necessário realizar a regularização junto à Receita Federal do Brasil antes de solicitar o registro.</div>');
                 }
 
                 avancaComHistorico('etapa19', proximaEtapa);
@@ -7661,7 +7686,7 @@
                     avancaComHistorico('etapa20', 'etapa32', '[VINCULO-CORRETO] ✅ O nome do responsável técnico (sócio ou sócio-administrador) consta no ato constitutivo ou alteração contratual');
                     return;
                 } else if (quadro_nao.checked) {
-                    avancaComHistorico('etapa20', 'etapa32', '[VINCULO-PENDENCIA] ⚠️ O nome do responsável técnico (sócio ou sócio-administrador) NÃO consta no ato constitutivo ou alteração contratual');
+                    avancaComHistorico('etapa20', 'etapa32', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Ausência do nome do profissional no quadro societário:</div><div class="mb-2" style="color: black; font-weight: normal;">A comprovação de vínculo entre o responsável técnico e a pessoa jurídica deverá ser realizada por meio de contrato social (quadro societário).</div>');
                     return;
                 } else {
 
@@ -7706,19 +7731,19 @@
                 if (contratante_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Contratante: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Contratante: Pendente');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Dados do CONTRATADO no contrato de prestação de serviços:</div><div class="mb-2" style="color: black; font-weight: normal;">Os dados do responsável técnico (CONTRATADO) devem ser informados, a fim de garantir sua identificação clara e inequívoca.</div>');
                 }
 
                 if (contratado_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Contratado: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Contratado: Pendente');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Dados do CONTRATANTE no contrato de prestação de serviços:</div><div class="mb-2" style="color: black; font-weight: normal;">Os dados da empresa (CONTRATANTE) devem ser informados, a fim de garantir sua identificação clara e inequívoca.</div>');
                 }
 
                 if (objeto_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Objeto Social: OK'); 
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Objeto Social: Pendente'); 
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Objeto do contrato não abrange a responsabilidade técnica:</div><div class="mb-2" style="color: black; font-weight: normal;">Ser responsável técnico(a) pela empresa significa que o(a) profissional irá se responsabilizar por toda a parte técnica de Arquitetura e Urbanismo da pessoa jurídica perante o CAU/SP, não havendo limitação dessa responsabilidade (como, por exemplo, obras e/ou atividades específicas).</div><div class="mb-2" style="color: black; font-weight: normal;">Portanto, o objeto do contrato deve abranger a responsabilidade técnica pela pessoa jurídica.</div>');
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -7763,19 +7788,19 @@
                 if (carga_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Carga: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Carga: Pendente');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: contrato sem carga horária detalhada:</div><div class="mb-2" style="color: black; font-weight: normal;">O contrato deve conter a carga horária detalhada (quantidade de horas por dia ou horas por semana) para verificação do salário mínimo profissional.</div>');
                 }
 
                 if (honorarios_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Honorários: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Honorários: Pendente');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: contrato sem o valor dos honorários mensais:</div><div class="mb-2" style="color: black; font-weight: normal;">O contrato deve conter os honorários mensais para verificação do salário mínimo profissional.</div>');
                 }
 
                 if (piso_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Piso: OK'); 
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Piso: Pendente'); 
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: valor do contrato não atende ao piso profissional:</div><div class="mb-2" style="color: black; font-weight: normal;">Os honorários mensais devem atender ao valor mínimo estabelecido na <a href="https://transparencia.caubr.gov.br/resolucao38/" target="blank">Resolução nº 38 do CAU/BR</a></div>');
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -7786,7 +7811,7 @@
                 if (document.getElementById('vigencia_sim').checked) {
                     avancaComHistorico('etapa23', 'etapa24', '[VINCULO-CORRETO] ✅ Vigencia: OK');
                 } else if (document.getElementById('vigencia_nao').checked) {
-                    avancaComHistorico('etapa23', 'etapa24', '[VINCULO-PENDENCIA] ⚠️ Vigencia: Pendente');
+                    avancaComHistorico('etapa23', 'etapa24', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: contrato sem vigência determinada:</div><div class="mb-2" style="color: black; font-weight: normal;">O contrato deve estabelecer uma data de término definida, sendo vedada a sua vigência por período superior a quatro anos, conforme dispõe o art. 598 do Código Civil.</div>');
                 } else {
                     Swal.fire({
                     icon: "warning",
@@ -7805,7 +7830,7 @@
                 if (document.getElementById('cert_correta_sim').checked) {
                     avancaComHistorico('etapa24', 'etapa35', '[VINCULO-CORRETO] ✅ Certificação: OK');
                 } else if (document.getElementById('cert_correta_nao').checked) {
-                    avancaComHistorico('etapa24', 'etapa35', '[VINCULO-PENDENCIA] ⚠️ Certificação: Pendente');
+                    avancaComHistorico('etapa24', 'etapa35', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: documento sem certificação digital:</div><div style="color: black; font-weight: normal;">O Contrato de Prestação de Serviços, em um arquivo PDF, deve ser salvo com <strong>CERTIFICAÇÃO DIGITAL</strong> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div style="color: black; font-weight: normal;">🔗 Para realizar a certificação digital gratuitamente pelo Gov.br <a href="https://assinador.iti.br/assinatura/index.xhtml">clique aqui</a>.</div><div style="color: black; font-weight: normal;">🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">clique aqui</a>.</div>');
                 } else {
                     Swal.fire({
                     icon: "warning",
@@ -7849,8 +7874,8 @@
                     if (!cboSim.checked && !cboNao.checked) erros.push("• Dados de <b>ocupação</b>.");
 
                     if (erros.length === 0) {
-                        proximosPassos.push(identSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Física Identificação: OK' : '[VINCULO-PENDENCIA] ⚠️ CTPS Física Identificação: Pendente');
-                        proximosPassos.push(cboSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Física CBO: OK' : '[VINCULO-PENDENCIA] ⚠️ CTPS Física CBO: Pendente');
+                        proximosPassos.push(identSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Física Identificação: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS incompleta:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter informações que comprovem o vínculo do profissional com a empresa, incluindo dados pessoais, registro (para comprovação do cargo e CNPJ vinculado), salário (para comprovação do atendimento ao piso salarial), dissídios e demais anotações pertinentes.</div>');
+                        proximosPassos.push(cboSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Física CBO: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: ocupação incompatível:</div><div class="mb-2" style="color: black; font-weight: normal;">O cargo registrado na CTPS deve compreender uma ocupação compatível com o exercício das atividades de Arquitetura e Urbanismo.</div>');
                         destino = 'etapa26'; // Fluxo Física
                     }
                 } 
@@ -7864,8 +7889,8 @@
                     if (!cboSim.checked && !cboNao.checked) erros.push("• Dados de <b>ocupação</b>.");
 
                     if (erros.length === 0) {
-                        proximosPassos.push(cadSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Digital Cadastrais: OK' : '[VINCULO-PENDENCIA] ⚠️ CTPS Digital Cadastrais: Pendente');
-                        proximosPassos.push(cboSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Digital CBO: OK' : '[VINCULO-PENDENCIA] ⚠️ CTPS Digital CBO: Pendente');
+                        proximosPassos.push(cadSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Digital Cadastrais: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS incompleta:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter informações que comprovem o vínculo do profissional com a empresa, incluindo dados pessoais, registro (para comprovação do cargo e CNPJ vinculado), salário (para comprovação do atendimento ao piso salarial), dissídios e demais anotações pertinentes.</div>');
+                        proximosPassos.push(cboSim.checked ? '[VINCULO-CORRETO] ✅ CTPS Digital CBO: OK' : '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: ocupação incompatível:</div><div class="mb-2" style="color: black; font-weight: normal;">O cargo registrado na CTPS deve compreender uma ocupação compatível com o exercício das atividades de Arquitetura e Urbanismo.</div>');
                         destino = 'etapa28'; // Fluxo Digital
                     }
                 }
@@ -7925,19 +7950,19 @@
                 if (honorarios26_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Carga: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Carga: Pendente');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS sem carga horária:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter a carga horária detalhada para verificação do salário mínimo profissional.</div><div class="mb-2" style="color: black; font-weight: normal;">Caso o documento não apresente está informação, deverá ser apresentada Ficha de Registro de Empregado ou documento equivalente que comprove a carga horária.</div>');
                 }
 
                 if (honorarios26_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Honorários: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Honorários: Pendente');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS sem valor dos honorários mensais:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter os honorários mensais para verificação do salário mínimo profissional.</div>');
                 }
 
                 if (piso26_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Piso: OK'); 
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Piso: Pendente'); 
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: valor dos honorários mensais não atende ao piso profissional:</div><div class="mb-2" style="color: black; font-weight: normal;">Os honorários mensais devem atender ao valor mínimo estabelecido na Resolução nº 38 do CAU/BR.</div>'); 
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -7950,7 +7975,7 @@
                 if (document.getElementById('cert_clt_sim').checked) {
                     avancaComHistorico('etapa27', 'etapa38', '[VINCULO-CORRETO] ✅ Certificação da CTPS fisica: OK');
                 } else if (document.getElementById('cert_clt_nao').checked) {
-                    avancaComHistorico('etapa27', 'etapa38', '[VINCULO-PENDENCIA] ⚠️ Certificação da CTPS fisica: Pendente');
+                    avancaComHistorico('etapa27', 'etapa38', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Documento sem certificação digital:</div><div style="color: black; font-weight: normal;">A CTPS, em um arquivo PDF, deve ser salvo com <strong>CERTIFICAÇÃO DIGITAL</strong> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div style="color: black; font-weight: normal;">🔗 Para realizar a certificação digital gratuitamente pelo Gov.br <a href="https://assinador.iti.br/assinatura/index.xhtml">clique aqui</a>.</div><div style="color: black; font-weight: normal;">🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">clique aqui</a>.</div>');
                 } else {
                     Swal.fire({
                     icon: "warning",
@@ -8001,19 +8026,19 @@
                 if (carga28_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Carga: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Carga: Pendente');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS sem carga horária:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter a carga horária detalhada para verificação do salário mínimo profissional.</div><div class="mb-2" style="color: black; font-weight: normal;">Caso o documento não apresente está informação, deverá ser apresentada Ficha de Registro de Empregado ou documento equivalente que comprove a carga horária.</div>');
                 }
 
                 if (honorarios28_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Honorários: OK');
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Honorários: Pendente');
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: CTPS sem valor dos honorários mensais:</div><div class="mb-2" style="color: black; font-weight: normal;">A CTPS deve conter os honorários mensais para verificação do salário mínimo profissional.</div>');
                 }
 
                 if (piso28_sim.checked) {
                     adicionarEscolha('[VINCULO-CORRETO] ✅ Piso: OK'); 
                 } else {
-                    adicionarEscolha('[VINCULO-PENDENCIA] ⚠️ Piso: Pendente'); 
+                    adicionarEscolha('[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: valor dos honorários mensais não atende ao piso profissional:</div><div class="mb-2" style="color: black; font-weight: normal;">Os honorários mensais devem atender ao valor mínimo estabelecido na Resolução nº 38 do CAU/BR.</div>'); 
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8067,7 +8092,7 @@
                 if (document.getElementById('cert_clt_digital_sim').checked) {
                     avancaComHistorico('etapa29', 'etapa38', '[VINCULO-CORRETO] ✅ Certificação da CTPS digital (não exportada): OK');
                 } else if (document.getElementById('cert_clt_digital_nao').checked) {
-                    avancaComHistorico('etapa29', 'etapa38', '[VINCULO-PENDENCIA] ⚠️ Certificação da CTPS digital (não exportada): Pendente');
+                    avancaComHistorico('etapa29', 'etapa38', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Documento sem certificação digital:</div><div style="color: black; font-weight: normal;">Caso a exportação do documento não tenha sido realizada diretamente do aplicativo "Carteira de Trabalho Digital" ou site do Gov.br, o arquivo contendo a CTPS digital deve ser salvo com <strong>CERTIFICAÇÃO DIGITAL</strong> da empresa ou de seu responsável legal (emitida pela ICP-Brasil ou pelo portal Gov.br).</div><br><div style="color: black; font-weight: normal;">🔗 Para realizar a certificação digital gratuitamente pelo Gov.br <a href="https://assinador.iti.br/assinatura/index.xhtml">clique aqui</a>.</div><div style="color: black; font-weight: normal;">🔗 Para consultar outras formas de realizar a certificação digital <a href="https://causp.gov.br/wp-content/uploads/2025/03/Certificacao-Digital.pdf">clique aqui</a>.</div>');
                 } else {
                     Swal.fire({
                     icon: "warning",
@@ -8080,13 +8105,12 @@
 
             }
 
-            // Etapa 31: 
-
+            // Etapa 31:
             function avancaVerificacaoPortariaNomeacao() {
                 if (document.getElementById('opcao_comprovante_vinculo_confere_ato_sim').checked) {
                     avancaComHistorico('etapa31', 'etapa44', '[VINCULO-CORRETO] ✅ Portaria de nomeação: OK');
                 } else if (document.getElementById('opcao_comprovante_vinculo_confere_ato_nao').checked) {
-                    avancaComHistorico('etapa31', 'etapa44', '[VINCULO-PENDENCIA] ⚠️ Portaria de nomeação: Pendente');
+                    avancaComHistorico('etapa31', 'etapa44', '[VINCULO-PENDENCIA] <div class="mb-2">⚠️ Pendencia: comprovante de vínculo sem dados do profissional (nome, cargo contratado e data de admissão):</div><div class="mb-2" style="color: black; font-weight: normal;">Os dados do responsável técnico devem ser informados, a fim de garantir sua identificação clara e inequívoca.</div>');
                 } else {
                     Swal.fire({
                     icon: "warning",
@@ -8129,19 +8153,19 @@
                 if (rrt32_cnpj_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT CNPJ: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT CNPJ: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Contratante e CNPJ:</div><div class="mb-2" style="color: black; font-weight: normal;">O nome do CONTRATANTE e número de CNPJ devem estar iguais aos dados da empresa solicitante do registro para comprovação da responsabilidade técnica.</div>');
                 }
 
                 if (rrt32_inicio_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Data de início: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Data de início: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Data de início:</div><div class="mb-2" style="color: black; font-weight: normal;">A data de início preenchida no RRT de desempenho de cargo ou função técnica determina o início da responsabilidade técnica; portanto, não pode ser anterior ao comprovante de vínculo do profissional.</div><div class="mb-2" style="color: black; font-weight: normal;">Conforme a Resolução nº 91, art. 13:</div><div class="mb-2" style="color: black; font-weight: normal;">§ 1º Não serão permitidas as alterações relativas a:</div><div class="mb-2" style="color: black; font-weight: normal;">a) data de início da atividade;</div>');
                 }
 
                 if (rrt32_termino_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Data de término: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Data de término: Pendente'); 
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Data de previsão de término:</div><div class="mb-2" style="color: black; font-weight: normal;">Data de Previsão de Término: deixar em branco (não preenchida).</div><div class="mb-2" style="color: black; font-weight: normal;">Caso seja contratação por prazo determinado ou período de experiência, a previsão de término do RRT deve ser a mesma do fim do período determinado.</div>');
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8173,7 +8197,8 @@
                 if (endereco33_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT endereço: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT endereço: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Endereço da Obra/Serviço:</div><div class="mb-2" style="color: black; font-weight: normal;">O campo "Endereço da Obra/Serviço" deve ser da empresa que está nomeando o profissional como responsável técnico (empresa solicitante do registro).</div>');
+
                 }
 
 
@@ -8211,13 +8236,13 @@
                 if (atividade34_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Atividade: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Atividade: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Atividade:</div><div style="color: black; font-weight: normal;">O RRT de Desempenho de Cargo ou Função Técnica emitido pelo profissional deve ser do tipo simples, preenchido com a atividade "3.7 - Desempenho de Cargo ou Função Técnica".</div>');
                 }
 
                 if (quantidade34_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Quantidade e Unidade: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Quantidade e Unidade de Medida:</div><div style="color: black; font-weight: normal;">Deve ser preenchida com a carga horária de trabalho definida no comprovante de vínculo, em horas por dia (h/d) ou horas por semana (h/sem). Exemplo: 6 horas por dia (6 h/d).</div><br>');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Quantidade e Unidade de Medida:</div><div style="color: black; font-weight: normal;"> <div class="mb-2" style="color: black; font-weight: normal;">A <strong>Quantidade</strong> e <strong>Unidade de Medida</strong> do RRT devem ser preenchidas com a carga horária de trabalho aproximada exercida. Exemplos:</div><div class="mb-2" style="color: black; font-weight: normal;">• 06 <strong>h/d</strong> (<strong>horas por dia</strong>)</div><div class="mb-2" style="color: black; font-weight: normal;"><div style="color: black; font-weight: normal;">ou</div></div><div class="mb-2" style="color: black; font-weight: normal;">• 30 <strong>h/sem</strong> (<strong>horas por semana</strong>).</div>');
                 }
 
                 if (tipologia34_sim.checked) {
@@ -8263,25 +8288,25 @@
                 if (rrt35_cnpj_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT CNPJ: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT CNPJ: Pendente');
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Contratante e CNPJ:</div><div class="mb-2" style="color: black; font-weight: normal;">O nome do CONTRATANTE e número de CNPJ devem estar iguais aos dados da empresa solicitante do registro para comprovação da responsabilidade técnica.</div>');
                 }
 
                 if (rrt35_inicio_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Data de início: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Data de início: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Data de início:</div><div class="mb-2" style="color: black; font-weight: normal;">A data de início preenchida no RRT de desempenho de cargo ou função técnica deve ser a data de início definida no contrato de prestação de serviços.</div><div class="mb-2" style="color: black; font-weight: normal;">Conforme a Resolução nº 91, art. 13:</div><div class="mb-2" style="color: black; font-weight: normal;">§ 1º Não serão permitidas as alterações relativas a:</div><div class="mb-2" style="color: black; font-weight: normal;">a) data de início da atividade;</div>');
                 }
 
                 if (rrt35_termino_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Data de término: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Data de término: Pendente'); 
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Data de previsão de término:</div><div class="mb-2" style="color: black; font-weight: normal;">A data de previsão de término preenchida no RRT de desempenho de cargo ou função técnica deve ser a data de fim da vigência determinada no contrato de prestação de serviços.</div>');
                 }
 
                 if (rrt35_valor_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Honorarios: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Honorarios: Pendente'); 
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Valor do Serviço/Honorários:</div><div class="mb-2" style="color: black; font-weight: normal;">O Valor do Serviço/Honorários deve ser preenchido conforme remuneração mensal estabelecida no contrato de prestação de serviços.</div>');
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8313,7 +8338,8 @@
                 if (endereco36_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT endereço: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT endereço: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Endereço da Obra/Serviço:</div><div class="mb-2" style="color: black; font-weight: normal;">O campo "Endereço da Obra/Serviço" deve ser da empresa que está nomeando o profissional como responsável técnico (empresa solicitante do registro).</div>');
+
                 }
 
 
@@ -8351,19 +8377,19 @@
                 if (atividade37_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Atividade: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Atividade: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Atividade:</div><div style="color: black; font-weight: normal;">O RRT de Desempenho de Cargo ou Função Técnica emitido pelo profissional deve ser do tipo simples, preenchido com a atividade "3.7 - Desempenho de Cargo ou Função Técnica".</div>');
                 }
 
                 if (quantidade37_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Quantidade e Unidade: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Quantidade e Unidade: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Quantidade e Unidade de Medida:</div><div style="color: black; font-weight: normal;"> <div class="mb-2" style="color: black; font-weight: normal;">A <strong>Quantidade</strong> e <strong>Unidade de Medida</strong> do RRT devem ser preenchidas com a carga horária definida no contrato de prestação de serviços. Exemplos:</div><div class="mb-2" style="color: black; font-weight: normal;">• 06 <strong>h/d</strong> (<strong>horas por dia</strong>)</div><div class="mb-2" style="color: black; font-weight: normal;"><div style="color: black; font-weight: normal;">ou</div></div><div class="mb-2" style="color: black; font-weight: normal;">• 30 <strong>h/sem</strong> (<strong>horas por semana</strong>).</div>');
                 }
 
                 if (tipologia37_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Tipologia: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Tipologia: Pendente'); 
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Tipologia:</div><div style="color: black; font-weight: normal;">Não há uma tipologia específica para o RRT de desempenho de cargo ou função técnica; portanto, o campo tipologia deve ser preenchido com "Não se aplica."</div><br>');
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8403,25 +8429,25 @@
                 if (rrt38_cnpj_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT CNPJ: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT CNPJ: Pendente');
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Contratante e CNPJ:</div><div class="mb-2" style="color: black; font-weight: normal;">O nome do CONTRATANTE e número de CNPJ devem estar iguais aos dados da empresa solicitante do registro para comprovação da responsabilidade técnica.</div>');
                 }
 
                 if (rrt38_inicio_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Data de início: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Data de início: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Data de início:</div><div class="mb-2" style="color: black; font-weight: normal;">A data de início preenchida no RRT de desempenho de cargo ou função técnica determina o início da responsabilidade técnica; portanto, não pode ser anterior ao registro do profissional na empresa.</div><div class="mb-2" style="color: black; font-weight: normal;">Conforme a Resolução nº 91, art. 13:</div><div class="mb-2" style="color: black; font-weight: normal;">§ 1º Não serão permitidas as alterações relativas a:</div><div class="mb-2" style="color: black; font-weight: normal;">a) data de início da atividade;</div>');
                 }
 
                 if (rrt38_termino_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Data de término: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Data de término: Pendente'); 
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Data de previsão de término:</div><div class="mb-2" style="color: black; font-weight: normal;">Data de Previsão de Término: deixar em branco (não preenchida), pois não há data definida para o fim da responsabilidade quando se trata de empregado (CLT).</div><div class="mb-2" style="color: black; font-weight: normal;">Caso seja contratação por prazo determinado ou período de experiência, a previsão de término do RRT deve ser a mesma do fim do período determinado.</div>');
                 }
 
                 if (rrt38_valor_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Honorarios: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Honorarios: Pendente'); 
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Valor do Serviço/Honorários:</div><div class="mb-2" style="color: black; font-weight: normal;">O Valor do Serviço/Honorários deve ser preenchido conforme remuneração mensal estabelecida na CTPS.</div>');
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8453,7 +8479,8 @@
                 if (endereco39_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT endereço: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT endereço: Pendente');
+                                        adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Endereço da Obra/Serviço:</div><div class="mb-2" style="color: black; font-weight: normal;">O campo "Endereço da Obra/Serviço" deve ser da empresa que está nomeando o profissional como responsável técnico (empresa solicitante do registro).</div>');
+
                 }
 
 
@@ -8491,19 +8518,20 @@
                 if (atividade40_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Atividade: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Atividade: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Atividade:</div><div style="color: black; font-weight: normal;">O RRT de Desempenho de Cargo ou Função Técnica emitido pelo profissional deve ser do tipo simples, preenchido com a atividade "3.7 - Desempenho de Cargo ou Função Técnica".</div>');
                 }
 
                 if (quantidade40_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Quantidade e Unidade: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Quantidade e Unidade: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Quantidade e Unidade de Medida:</div><div style="color: black; font-weight: normal;"> <div class="mb-2" style="color: black; font-weight: normal;">A <strong>Quantidade</strong> e <strong>Unidade de Medida</strong> do RRT devem ser preenchidas com a carga horária definida na ficha de registro do empregado. Exemplos:</div><div class="mb-2" style="color: black; font-weight: normal;">• 06 <strong>h/d</strong> (<strong>horas por dia</strong>)</div><div class="mb-2" style="color: black; font-weight: normal;"><div style="color: black; font-weight: normal;">ou</div></div><div class="mb-2" style="color: black; font-weight: normal;">• 30 <strong>h/sem</strong> (<strong>horas por semana</strong>).</div>');
                 }
 
                 if (tipologia40_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Tipologia: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Tipologia: Pendente'); 
+                                        adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Tipologia:</div><div style="color: black; font-weight: normal;">Não há uma tipologia específica para o RRT de desempenho de cargo ou função técnica; portanto, o campo tipologia deve ser preenchido com "Não se aplica."</div><br>');
+
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8540,19 +8568,19 @@
                 if (rrt41_cnpj_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT CNPJ: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT CNPJ: Pendente');
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Contratante e CNPJ:</div><div class="mb-2" style="color: black; font-weight: normal;">O nome do CONTRATANTE e número de CNPJ devem estar iguais aos dados da empresa solicitante do registro para comprovação da responsabilidade técnica.</div>');
                 }
 
                 if (rrt41_inicio_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Data de início: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Data de início: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Data de início:</div><div class="mb-2" style="color: black; font-weight: normal;">A data de início preenchida no RRT de desempenho de cargo ou função técnica determina o início da responsabilidade técnica; portanto, não pode ser anterior ao vínculo do profissional com a empresa.</div><div class="mb-2" style="color: black; font-weight: normal;">Conforme a Resolução nº 91, art. 13:</div><div class="mb-2" style="color: black; font-weight: normal;">§ 1º Não serão permitidas as alterações relativas a:</div><div class="mb-2" style="color: black; font-weight: normal;">a) data de início da atividade;</div>');
                 }
 
                 if (rrt41_termino_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Data de término: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Data de término: Pendente'); 
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Data de previsão de término:</div><div class="mb-2" style="color: black; font-weight: normal;">Data de Previsão de Término: Caso o comprovante de vínculo defina um fim da vigência da responsabilidade técnica, informe esta data como previsão de término; caso contrário, o campo deve ficar em branco, pois não há uma data definida para o fim da responsabilidade.</div>');
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8584,7 +8612,8 @@
                 if (endereco42_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT endereço: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT endereço: Pendente');
+                                        adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Endereço da Obra/Serviço:</div><div class="mb-2" style="color: black; font-weight: normal;">O campo "Endereço da Obra/Serviço" deve ser da empresa que está nomeando o profissional como responsável técnico (empresa solicitante do registro).</div>');
+
                 }
 
 
@@ -8622,19 +8651,20 @@
                 if (atividade43_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Atividade: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Atividade: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Atividade:</div><div style="color: black; font-weight: normal;">O RRT de Desempenho de Cargo ou Função Técnica emitido pelo profissional deve ser do tipo simples, preenchido com a atividade "3.7 - Desempenho de Cargo ou Função Técnica".</div>');
                 }
 
                 if (quantidade43_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Quantidade e Unidade: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Quantidade e Unidade: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Quantidade e Unidade de Medida:</div><div style="color: black; font-weight: normal;"> <div class="mb-2" style="color: black; font-weight: normal;">A <strong>Quantidade</strong> e <strong>Unidade de Medida</strong> do RRT devem ser preenchidas com a carga horária aproximada de trabalho exercida. Exemplos:</div><div class="mb-2" style="color: black; font-weight: normal;">• 06 <strong>h/d</strong> (<strong>horas por dia</strong>)</div><div class="mb-2" style="color: black; font-weight: normal;"><div style="color: black; font-weight: normal;">ou</div></div><div class="mb-2" style="color: black; font-weight: normal;">• 30 <strong>h/sem</strong> (<strong>horas por semana</strong>).</div>');
                 }
 
                 if (tipologia43_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Tipologia: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Tipologia: Pendente'); 
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Tipologia:</div><div style="color: black; font-weight: normal;">Não há uma tipologia específica para o RRT de desempenho de cargo ou função técnica; portanto, o campo tipologia deve ser preenchido com "Não se aplica."</div><br>');
+
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8674,25 +8704,25 @@
                 if (rrt44_cnpj_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT CNPJ: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT CNPJ: Pendente');
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Contratante e CNPJ:</div><div class="mb-2" style="color: black; font-weight: normal;">O nome do CONTRATANTE e número de CNPJ devem estar iguais aos dados da empresa solicitante do registro para comprovação da responsabilidade técnica.</div>');
                 }
 
                 if (rrt44_inicio_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Data de início: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Data de início: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Data de início:</div><div class="mb-2" style="color: black; font-weight: normal;">A data de início preenchida no RRT de desempenho de cargo ou função técnica determina o início da responsabilidade técnica; portanto, não pode ser anterior ao comprovante de vínculo do profissional.</div><div class="mb-2" style="color: black; font-weight: normal;">Conforme a Resolução nº 91, art. 13:</div><div class="mb-2" style="color: black; font-weight: normal;">§ 1º Não serão permitidas as alterações relativas a:</div><div class="mb-2" style="color: black; font-weight: normal;">a) data de início da atividade;</div>');
                 }
 
                 if (rrt44_termino_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Data de término: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Data de término: Pendente'); 
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Data de previsão de término:</div><div class="mb-2" style="color: black; font-weight: normal;">Data de Previsão de Término: deixar em branco (não preenchida).</div><div class="mb-2" style="color: black; font-weight: normal;">Caso seja contratação por prazo determinado ou período de experiência, a previsão de término do RRT deve ser a mesma do fim do período determinado.</div>');
                 }
 
                 if (rrt44_valor_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Honorarios: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Honorarios: Pendente'); 
+                     adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Valor do Serviço/Honorários:</div><div class="mb-2" style="color: black; font-weight: normal;">O Valor do Serviço/Honorários deve ser preenchido conforme remuneração mensal estabelecida no comprovante de vínculo.</div>');
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -8724,7 +8754,8 @@
                 if (endereco45_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT endereço: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT endereço: Pendente');
+                                        adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Endereço da Obra/Serviço:</div><div class="mb-2" style="color: black; font-weight: normal;">O campo "Endereço da Obra/Serviço" deve ser da empresa que está nomeando o profissional como responsável técnico (empresa solicitante do registro).</div>');
+
                 }
 
 
@@ -8762,19 +8793,20 @@
                 if (atividade46_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Atividade: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Atividade: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Atividade:</div><div style="color: black; font-weight: normal;">O RRT de Desempenho de Cargo ou Função Técnica emitido pelo profissional deve ser do tipo simples, preenchido com a atividade "3.7 - Desempenho de Cargo ou Função Técnica".</div>');
                 }
 
                 if (quantidade46_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Quantidade e Unidade: OK');
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Quantidade e Unidade: Pendente');
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Quantidade e Unidade de Medida:</div><div style="color: black; font-weight: normal;"> <div class="mb-2" style="color: black; font-weight: normal;">A <strong>Quantidade</strong> e <strong>Unidade de Medida</strong> do RRT devem ser preenchidas com a carga horária de trabalho exercida. Exemplos:</div><div class="mb-2" style="color: black; font-weight: normal;">• 06 <strong>h/d</strong> (<strong>horas por dia</strong>)</div><div class="mb-2" style="color: black; font-weight: normal;"><div style="color: black; font-weight: normal;">ou</div></div><div class="mb-2" style="color: black; font-weight: normal;">• 30 <strong>h/sem</strong> (<strong>horas por semana</strong>).</div>');
                 }
 
                 if (tipologia46_sim.checked) {
                     adicionarEscolha('[RRT-CORRETO] ✅ RRT Tipologia: OK'); 
                 } else {
-                    adicionarEscolha('[RRT-PENDENCIA] ⚠️ RRT Tipologia: Pendente'); 
+                    adicionarEscolha('[RRT-PENDENCIA] <div class="mb-2">⚠️ Tipologia:</div><div style="color: black; font-weight: normal;">Não há uma tipologia específica para o RRT de desempenho de cargo ou função técnica; portanto, o campo tipologia deve ser preenchido com "Não se aplica."</div><br>');
+
                 }
 
                 // 4. Navegação (Apenas motor de troca de tela)
@@ -10825,7 +10857,7 @@
             // requerimento - com todos os dados 
             document.getElementById('ajuda-02-etapa-12')?.addEventListener('click', function () {
                 Swal.fire({
-                    title: '<div class="ajuda-titulo"><strong>Requerimento de Empresário atualizado:</div>',
+                    title: '<div class="ajuda-titulo"><strong>Valor do capital social, objeto social e endereço da empresa no Requerimento de Empresário atualizado:</div>',
                     icon: "question",
                     customClass: {
                         icon: 'icone-ajuda-personalizacao'
