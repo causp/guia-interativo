@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
     <head>
-
+        
         <!-- remover após aprovação -->
         <meta name="robots" content="noindex, nofollow">
 
@@ -16,10 +16,10 @@
         gtag('config', 'G-TYRRSPDXXW');
         </script>
 
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Index</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>Guia de Registro CAU/SP</title>
 
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rawline/dist/rawline.css"> -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -73,6 +73,7 @@
 
             .coach-mark {
                 color: #0d2b49;
+                
             }
             
             .grupos {
@@ -210,14 +211,35 @@
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
 
+            /* 1. O trilho da barra (Fundo Cinza Suave) */
+            .progress {
+                background-color: #e9ecef; /* Cinza bem sutil para não pesar a tela */
+                border-radius: 50rem;
+                height: 1.00rem; /* Altura ajustada conforme solicitado */
+                box-shadow: none; 
+                overflow: hidden;
+            }
+
+            /* 2. A barra de preenchimento (Verde Elegante com Degradê Leve) */
             .progresso-barra {
-                /* Não defina transition aqui, o JS vai controlar para evitar bugs de reset */
-                min-width: 2em;
+                /* Degradê sutil: começa um pouco mais claro e termina na sua cor base (#147146) */
+                background: linear-gradient(90deg, #198452cd 0%, #147146 100%) !important; 
+                
+                /* Design flat e minimalista */
+                box-shadow: none !important; 
+                border-radius: 50rem; 
+                
+                /* Tipografia ajustada para a nova altura de 1rem */
+                color: #ffffff;
+                font-weight: 500;
+                font-size: 0.70rem; /* Um pouco menor para respirar bem dentro do 1rem */
+                letter-spacing: 0.5px;
+                
+                /* Alinhamento perfeito do texto */
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: white;
-                font-weight: bold;
+                min-width: 2em;
             }
 
             /* Fundo escurecido que cobre a tela */
@@ -266,14 +288,14 @@
             <div class="mt-3 fw-bold" style="color: #14385d;">Processando informações...</div>
         </div>
 
-        <header style="padding: 25px; background: linear-gradient(135deg, #14385d 0%, #0c2239 50%, #14385d 100%);">
-            <!-- <img src="" alt=""> -->
-            <h2 class="text-center my-1 mb-3" style="color: #fff;">Guia de Registro de Empresa - CAU/SP</h2>
+        <header style="padding: 25px 25px; background-image: url('imagem.png'), linear-gradient(135deg, #14385d 0%, #0c2239 50%, #14385d 100%); background-size: cover; background-position: center; background-blend-mode: hard-light; border-radius: 5px;">
+            <h2 class="text-center my-1 mb-3" style="color: #fff; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); font-weight: 600;">
+                Guia de Registro de Empresa - CAU/SP
+            </h2>
+        </header>   
+        
 
-            <!-- <h2 class="text-center my-1" style="color: #fff;">Guia de Interativo</h2>
-            <h5 class="text-center my-1" style="color: #fff;">Registro de Empresa no CAU/SP</h5> -->
 
-        </header>
 
         <div class="container" style="margin-top: -20px;">
 
@@ -4257,7 +4279,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento dos dados do serviço e contratante:</h6>
-                            <img src="img/rrt-info-dados-contrato.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-dados-contrato.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -4353,7 +4375,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento do endereço:</h6>
-                            <img src="img/rrt-info-endereco.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-endereco.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -4549,7 +4571,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento da atividade técnica e tipologia:</h6>
-                            <img src="img/rrt-info-carga-horaria-e-tipologia.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-carga-horaria-e-tipologia.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -4779,7 +4801,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento dos dados do serviço e contratante:</h6>
-                            <img src="img/rrt-info-dados-contrato.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-dados-contrato.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -4874,7 +4896,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento do endereço:</h6>
-                            <img src="img/rrt-info-endereco.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-endereco.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -5055,7 +5077,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento da atividade técnica e tipologia:</h6>
-                            <img src="img/rrt-info-carga-horaria-e-tipologia.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-carga-horaria-e-tipologia.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -5286,7 +5308,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento dos dados do serviço e contratante:</h6>
-                            <img src="img/rrt-info-dados-contrato.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-dados-contrato.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -5379,7 +5401,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento do endereço:</h6>
-                            <img src="img/rrt-info-endereco.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-endereco.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -5556,7 +5578,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento da atividade técnica e tipologia:</h6>
-                            <img src="img/rrt-info-carga-horaria-e-tipologia.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-carga-horaria-e-tipologia.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -5755,7 +5777,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento dos dados do serviço e contratante:</h6>
-                            <img src="img/rrt-info-dados-contrato.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-dados-contrato.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -5845,7 +5867,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento do endereço:</h6>
-                            <img src="img/rrt-info-endereco.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-endereco.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -6024,7 +6046,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento da atividade técnica e tipologia:</h6>
-                            <img src="img/rrt-info-carga-horaria-e-tipologia.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-carga-horaria-e-tipologia.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -6257,7 +6279,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento dos dados do serviço e contratante:</h6>
-                            <img src="img/rrt-info-dados-contrato.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-dados-contrato.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -6350,7 +6372,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento do endereço:</h6>
-                            <img src="img/rrt-info-endereco.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-endereco.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -6535,7 +6557,7 @@
 
                         <div class="text-center">
                             <h6>Orientação sobre o preenchimento da atividade técnica e tipologia:</h6>
-                            <img src="img/rrt-info-carga-horaria-e-tipologia.png" alt="Imagem" class="img-fluid w-75">
+                            <img src="img/rrt-info-carga-horaria-e-tipologia.jpeg" alt="Imagem" class="img-fluid w-75">
                         </div>
                         
                         <br> <br>
@@ -6715,39 +6737,124 @@
 
             // 1. Variáveis Globais (Mantenha no topo do script)
             const TotalEtapas = 48;
-            let etapasVisitadas = [];
 
-            // NOVA VARIÁVEL: Guarda uma "foto" do tamanho do histórico ao chegar na etapa
+
+            // 1. Tabela manual de porcentagens
+            // Aqui você define exatamente quanto a barra deve encher em cada tela
+            const porcentagensManuais = {
+                // ==========================================
+                // BLOCO 1: Início e Triagem (0% a 25%)
+                // ==========================================
+                'etapa0': 2,   // Tela Inicial (Bem-vindo)
+                'etapa1': 10,  // Escolha do Tipo de Vínculo
+                'etapa2': 15,  // Verificação: Expressões Arquitetura
+                'etapa3': 20,  // Verificação: Sócio Arquiteto?
+                'etapa4': 25,  // Verificação: Empregado CLT
+                'etapa5': 100, // TELA DE BLOQUEIO (Restrição de nome) -> 100% pois é fim de linha
+                'etapa6': 20,  // Aviso Outro Tipo (Vínculo)
+
+                // ==========================================
+                // BLOCO 2: Ato Constitutivo (30% a 40%)
+                // ==========================================
+                'etapa7': 30,  // Escolha do Ato Constitutivo
+                'etapa8': 35,  // JUCESP (Atualizado/Registrado)
+                'etapa9': 40,  // JUCESP (Certificação)
+                'etapa10': 35, // Cartório (Atualizado/Registrado)
+                'etapa11': 40, // Cartório (Certificação)
+                'etapa12': 35, // Requerimento (Atualizado/Capital/Registrado)
+                'etapa13': 40, // Requerimento (Certificação)
+                'etapa14': 35, // Estatuto (Atualizado/Registrado)
+                'etapa15': 40, // Estatuto (Certificação)
+                'etapa16': 40, // Norma Pública
+                'etapa17': 40, // Outro Tipo (Ato)
+                'etapa18': 100, // TELA DE BLOQUEIO (MEI) -> 100% pois é fim de linha
+
+                // ==========================================
+                // BLOCO 3: O Meio do Caminho (50%)
+                // ==========================================
+                'etapa19': 50, // Dados CNPJ e Situação Ativa
+
+                // ==========================================
+                // BLOCO 4: Comprovantes e RRT (55% a 90%)
+                // ==========================================
+                
+                // Caminho A: Sócio / Sócio-Admin (Curto)
+                'etapa20': 60, // Quadro Societário
+                'etapa32': 70, // RRT (CNPJ, Início, Fim)
+                'etapa33': 80, // RRT (Endereço)
+                'etapa34': 90, // RRT (Atividade, Qtd, Tipologia)
+
+                // Caminho B: Prestador de Serviços (Longo)
+                'etapa21': 55, // CPS (Dados Gerais)
+                'etapa22': 60, // CPS (Cálculo Piso)
+                'etapa23': 65, // CPS (Vigência)
+                'etapa24': 70, // CPS (Assinaturas/Certificação)
+                'etapa35': 75, // RRT (CNPJ, Início, Fim, Honorários)
+                'etapa36': 85, // RRT (Endereço)
+                'etapa37': 90, // RRT (Atividade, Qtd, Tipologia)
+
+                // Caminho C: Empregado (CLT) (Médio)
+                'etapa25': 55, // CTPS Física ou Digital
+                'etapa26': 60, // CTPS Física (Piso)
+                'etapa27': 70, // CTPS Física (Certificação)
+                'etapa28': 60, // CTPS Digital (Piso)
+                'etapa29': 70, // CTPS Digital (Certificação)
+                'etapa38': 80, // RRT (CNPJ, Início, Fim, Honorários)
+                'etapa39': 85, // RRT (Endereço)
+                'etapa40': 90, // RRT (Atividade, Qtd, Tipologia)
+
+                // Caminho D: Servidor Público
+                'etapa31': 60, // Portaria
+                'etapa44': 70, // RRT (CNPJ, Início, Fim, Honorários)
+                'etapa45': 80, // RRT (Endereço)
+                'etapa46': 90, // RRT (Atividade, Qtd, Tipologia)
+
+                // Caminho E: Outro Tipo
+                'etapa30': 60, // Outro Tipo (Aviso)
+                'etapa41': 70, // RRT (CNPJ, Início, Fim)
+                'etapa42': 80, // RRT (Endereço)
+                'etapa43': 90, // RRT (Atividade, Qtd, Tipologia)
+
+                // ==========================================
+                // BLOCO 5: Finalização (95% a 100%)
+                // ==========================================
+                'etapa47': 95, // Situação da Análise (Quadro de Resumo)
+                'etapa48': 100 // Tela Final de Sucesso
+            };
+
+            // Variáveis Globais de Estado
+            let etapasVisitadas = [];
             let tamanhoHistoricoNaChegada = { 'etapa0': 0, 'etapa1': 0 };
 
-            // 2. Função de Cálculo (Mova para fora para que ambas as funções a vejam)
+            // 2. Função da Barra de Progresso Atualizada
             function atualizarBarraProgresso(idEtapa, vindoDeEtapa = null) {
-                const numeroEtapa = parseInt(idEtapa.replace('etapa', ''), 10);
-                let porcentagemDestino = Math.round((numeroEtapa / TotalEtapas) * 100); // TotalEtapas variável global
+                
+                // Busca a porcentagem no Dicionário acima. Se não achar (por algum erro de digitação), assume 0.
+                const porcentagemDestino = porcentagensManuais[idEtapa] || 0; 
                 
                 const etapaAtiva = document.getElementById(idEtapa);
+                if (!etapaAtiva) return; // Prevenção contra erros
+
                 const barra = etapaAtiva.querySelector('.progresso-barra');
 
                 if (barra) {
-                    // 1. Resetar o estado da barra para garantir que a animação ocorra sempre
-                    barra.style.transition = "none"; // Desliga animação para o "pulo" inicial
+                    // 1. Resetar o estado da barra para garantir a animação
+                    barra.style.transition = "none"; 
                     
                     if (vindoDeEtapa) {
-                        // Se estou VOLTANDO: Começo com a porcentagem de onde eu estava (mais alta)
-                        const numeroVindo = parseInt(vindoDeEtapa.replace('etapa', ''), 10);
-                        const porcentagemVindo = Math.round((numeroVindo / TotalEtapas) * 100); // TotalEtapas variável global
+                        // Se estou VOLTANDO: Busca a porcentagem da etapa de onde eu vim para fazer a barra "encolher"
+                        const porcentagemVindo = porcentagensManuais[vindoDeEtapa] || 0;
                         barra.style.width = porcentagemVindo + "%";
                     } else {
-                        // Se estou AVANÇANDO: Começo do 0 ou da porcentagem da etapa anterior
-                        // (Isso garante que ela sempre "encha" ao entrar na tela)
+                        // Se estou AVANÇANDO: Começa do zero e vai encher
                         barra.style.width = "0%"; 
                     }
 
-                    // 2. FORÇAR REFLOW: Isso obriga o navegador a registrar o "width" acima antes de mudar
+                    // 2. FORÇAR REFLOW (Obrigatório para o navegador renderizar o pulo acima antes da animação)
                     void barra.offsetWidth; 
 
-                    // 3. Aplicar o valor final com a animação ligada
-                    barra.style.transition = "width 0.6s cubic-bezier(0.4, 0, 0.2, 1)"; // Transição mais elegante
+                    // 3. Aplicar o valor final ligando o motor de animação
+                    barra.style.transition = "width 0.6s cubic-bezier(0.4, 0, 0.2, 1)"; 
                     barra.style.width = porcentagemDestino + "%";
                     barra.innerText = porcentagemDestino + "%";
                     
