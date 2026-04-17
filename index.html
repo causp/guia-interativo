@@ -111,7 +111,7 @@
             /* ccs para transições */
 
             .hidden {
-                display: none/* esconder todos card */
+                display: none /* esconder todos card */
             }
 
             .info-box {
@@ -292,6 +292,9 @@
             <h2 class="text-center my-1 mb-3" style="color: #fff; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); font-weight: 600;">
                 Guia de Registro de Empresa - CAU/SP
             </h2>
+
+
+
         </header>   
         
 
@@ -304,16 +307,22 @@
             <!-- ETAPA 0 -->
             <div class="card tela" id="etapa0">
 
-                <div class="row mt-3 my-2">
-                    <h5 style="color: red;">Página de teste (revisar)</h5>
-                </div>  
+
+                
+                <div class="row mt-4 mb-2">
+                    <h4 style="color: #14385D;">Objetivo do Guia de Registro</h4>
+                    <div class="mt-1" style="text-align: justify;">
+                        Este guia interativo tem como objetivo facilitar o processo de registro de Pessoa Jurídica no CAU/SP. Ele orienta a conferência detalhada da documentação exigida, permitindo a identificação e correção de inconsistências <strong>antes do envio</strong>. Com isso, busca-se garantir que a solicitação seja encaminhada corretamente logo na <strong>primeira tentativa</strong>, <strong>agilizando a aprovação</strong> do registro e <strong>evitando atrasos</strong> decorrentes de reanálises.
+                    </div>
+                </div>
+
 
                 <div class="row mt-3 my-2">
-                    <h3>Quem deve se registrar?</h3>
+                    <h4 style="color: #113355;">Quem deve se registrar?</h4>
                 </div>   
                 
-                <div class="row mt-2">
-                    <h5>O registro no CAU/SP é obrigatório para empresas que:</h5>
+                <div class="row mt-1">
+                    <h5 style="color: #113355;">O registro no CAU é obrigatório para empresas que:</h5>
                     <div>
                         <ul>
                             <li class="my-1">Possuam <strong>atividades de Arquitetura e Urbanismo (*) em seu objeto social</strong> (sejam exclusivas ou compartilhadas com outras profissões);</li>
@@ -324,20 +333,21 @@
                     </div>
                 </div>
 
-                <div class="row mt-2">
-                    <h5>Veja a documentação necessária para o Registro de Pessoa Jurídica</h5>
+                <div class="row mt-1">
+                    <h5 style="color: #113355;">Veja a documentação necessária para o Registro de Pessoa Jurídica:</h5>
                     <div>
-                        <ul>
+                        <ol>
                             <li class="my-1"><strong>Contrato Social</strong> (ou Requerimento de Empresário);</li>
                             <li class="my-1"><strong>Cartão CNPJ</strong>;</li>
                             <li class="my-1"><strong>Comprovante de vínculo</strong> do Responsável Técnico com a empresa;</li>
                             <li class="my-1"><strong>RRT de Cargo e Função</strong> do profissional responsável.</li>
-                        </ul>
+                        </ol>
                     </div>
                 </div>
 
-                <div class="row mt-2">
-                    <div>
+                
+                <div class="row mt-1 mb-3">
+                    <div style="text-align: justify; font-size: 0.9rem">
 
                         <i>
                             <strong>Observação</strong>: Este guia possui caráter exclusivamente orientativo e não substitui a análise realizada pela equipe técnica do CAU/SP. Portanto, é imprescindível abrir a solicitação de registro e encaminhar a documentação após a devida conferência.
@@ -351,6 +361,11 @@
                     </div>
                 </div>
 
+                <div class="row mt-1 my-2">
+                    <small style="color: red;"><i>Página apenas para testes (em revisão).</i></small>
+                </div>
+
+
                 <hr class="my-4">
                
                 <div class="btn-container row my-3">
@@ -359,6 +374,7 @@
                         <button class="btn btn-success px-3 fw-semibold" onclick="avancaInicio()">Iniciar a verificação ❯</button>
                     </div>
                 </div>
+                
 
             </div>
 
@@ -6677,21 +6693,23 @@
                         Verificação inicial realizada com sucesso!
                     </div>
 
-                    <div class="border border-2 border-success rounded-2 w-100 p-2">
+                    <div class="border border-2 border rounded-2 w-100 p-2">
                         
                         <div class="p-3 my-2">
+                            
+                            <div class="row my-3;">
+                                <h5 class="mb-3" style="text-align: center; ">Informações Importantes:</h5>
+                            </div>
 
 
                             <div class="alert alert-secondary text-center text-dark mb-3" role="alert">
                                 <p class="mb-3">
-                                    <strong>Atenção</strong>: a situação da análise apresentada neste guia é preenchida conforme os dados informados pelo usuário e não garante a aprovação da solicitação de registro. A análise será realizada pela equipe técnica do CAU/SP após a abertura da solicitação e o envio de toda a documentação.
+                                    A situação da análise apresentada neste guia é preenchida conforme os dados <strong>informados pelo usuário</strong> e <strong>não garante a aprovação</strong> da solicitação de registro. A análise será realizada pela equipe técnica do CAU/SP após a abertura da solicitação e o envio de toda a documentação.
                                 </p>
                             </div>
 
-
-
                             <div class="alert alert-secondary text-center text-dark my-4" role="alert">
-                                <p class="mb-1"><strong>Prazo para a análise da solicitação:</strong> até 30 dias.</p>
+                                <p class="mb-1"><strong>Prazo para a análise da solicitação:</strong> até 30 dias;</p>
                                 <p class="mb-0"><strong>Em caso de diligências:</strong> o prazo para a reanálise será de 10 dias.</p>
                             </div>
 
@@ -6701,9 +6719,20 @@
                                 Envie a documentação completa e sem pendências.
                             </div>
 
+
+
+
+
+
+
+                            <div class="alert alert-secondary text-center text-dark my-4" role="alert">
+                                <p class="mb-1"><strong>Nome dos arquivos PDFs</strong></p>
+                                <p class="mb-0">Não usar caracteres especiais  (<strong>"?","º", "%", "&", entre outros</strong>) ou <strong>espaços em branco</strong> ao nomear os arquivos PDFs com os documentos da empresa (isso afeta o envio e abertura do documento no sistema do CAU).</p>
+                            </div>
+
                             <hr class="my-2">
 
-                            <h5 class="card-text text-center mt-3 mb-2 mt-4"><strong>Clique no botão abaixo para preencher a solicitação de registro no CAU/SP</strong></h5>   
+                            <h5 class="card-text text-center mt-3 mb-2 mt-4"><strong>Clique no botão abaixo para preencher a solicitação de registro no CAU</strong></h5>   
   
                             </div>
 
